@@ -1,1 +1,3 @@
-# Ytt
+# YouTube Trimmer
+
+Speedrun challenge 
