@@ -31,11 +31,7 @@ def main():
                 start_time = float(start_time)
                 end_time = float(end_time)
                 trimmed_path = download_and_trim_video(youtube_url, start_time, end_time)
-
-                if trimmed_path:
-                    st.video(trimmed_path)
-
-                    st.markdown(f"[Download Trimmed Video]({trimmed_path})")
+         
             except ValueError:
                 st.error("Invalid input for start or end time. Please enter a valid number.")
         else:
