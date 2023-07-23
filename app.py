@@ -10,7 +10,7 @@ def download_and_trim_video(youtube_url, start_time, end_time):
 
         clip = VideoFileClip(video_path).subclip(start_time, end_time)
         trimmed_path = 'trimmed_video.mp4'
-        clip.write_videofile(trimmed_path, codec='h264', audio_codec='mp3')
+        clip.write_videofile(trimmed_path, codec='libx264', audio_codec='aac')
 
         return trimmed_path
 
